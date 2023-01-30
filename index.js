@@ -9,7 +9,7 @@ var resultado = (n1 / (n2*n2)).toFixed(2)
 localStorage.setItem('IMC', `${resultado}`)
 
 if(resultado == 'NaN'){
-    p.innerHTML = "Digite um valor para calcularmos seu IMC"
+    p.innerHTML = "Digite um valor para calcularmos se IMC"
    
 }
 
@@ -38,4 +38,8 @@ else if(resultado < 18.5){
     p.innerHTML = `Seu IMC está em ${resultado}, e você está em um estado de obesidade grave, procure um médico urgente.`
    
 }
+}
+
+function menu(){
+    document.querySelector(".nav").style.display = "flex"
 }
