@@ -19,7 +19,7 @@ else if(resultado < 18.5){
         
 
    
-}else if(resultado == 18.5 || resultado <= 29.9){
+}else if(resultado == 18.5 || resultado <= 24.9){
     setInterval(function fogo(){
     p.innerHTML = `Seu IMC está em ${resultado}, você está com o peso ideal. Parabéns`
     document.querySelector("#img").src = "fogo.gif"
