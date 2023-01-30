@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>App Treino</title>
+</head>
+<body>
+
+    <header>
+        <i class="bi bi-list"></i>
+
+    </header>
+
+    <div class="container">
+
+
+        <div class="calculo">
+            <form id="form">
+                <div class="form-control">
+                    <label for="">Quantos KG você pesa?</label>
+                <input type="number" id="kg" placeholder="Peso (ex: 89,00)">
+                </div>
+
+                <div class="form-control">
+                    <label for="">Qual a sua altura?</label>
+                <input type="number" id="altura" placeholder="Altura (ex: 1,80)">
+                </div>
+                <button onclick="calcular();return false">Calcular</button>
+            </form>
+        </div>
+
+        <img src="" alt="" id="img">
+        <p id="p"></p>
+
+        <div class="class">
+
+            <h3>INTERPRETAÇÃO DO IMC</h3>
+        
+       <table>
+        <thead>
+
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>IMC</td>
+                <td>CLASSIFICAÇÃO</td>
+                <td>OBESIDADE (GRAU)</td>
+            </tr>
+            
+            <tr>
+                <td>MENOR 18,5</td>
+                <td>MAGREZA</td>
+                <td>0</td>
+            </tr>
+
+            <tr>
+                <td>ENTRE 18,5 E 24,9</td>
+                <td>NORMAL</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>ENTRE 25,0 E 29,9</td>
+                <td>SOBREPESO</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                <td>ENTRE 30,0 E 39,9</td>
+                <td>OBESIDADE</td>
+                <td>II</td>
+            </tr>
+
+            <tr>
+                <td>MAIOR QUE 40,0</td>
+                <td>OBESIDADE GRAVE</td>
+                <td>III</td>
+            </tr>
+        </tbody>
+       </table>
+        </div>
+    </div>
+    
+</body>
+
+<script src="index.js"></script>
+</html>
