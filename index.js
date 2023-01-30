@@ -9,7 +9,7 @@ var resultado = (n1 / (n2*n2)).toFixed(2)
 localStorage.setItem('IMC', `${resultado}`)
 
 if(resultado == 'NaN'){
-    p.innerHTML = "Digite um valor para calcularmos se IMC"
+    p.innerHTML = "Digite um valor para calcularmos seu IMC"
    
 }
 
