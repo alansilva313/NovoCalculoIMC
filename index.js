@@ -42,4 +42,12 @@ else if(resultado < 18.5){
 
 function menu(){
     document.querySelector(".nav").style.display = "flex"
+    document.querySelector(".fechar").style.display = "flex"
+    document.querySelector(".open").style.display = "none"
+}
+
+function fechar(){
+    document.querySelector(".nav").style.display = "none"
+    document.querySelector(".fechar").style.display = "none"
+    document.querySelector(".open").style.display = "flex"
 }
