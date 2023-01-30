@@ -11,14 +11,33 @@
 <body>
 
     <header>
-        <i class="bi bi-list"></i>
+        <i class="bi bi-list" onclick="menu()"></i>
 
     </header>
 
+    <div class="nav">
+
+    </div>
+
     <div class="container">
 
+        <div class="capa">
+            <img src="dieta.jpg" alt="">
+        </div>
+
+        
+
+    
+        <div class="paragrafo">
+            <h2>O que é IMC?</h2>
+        <p>O Índice de Massa Corporal (IMC) é uma das principais ferramentas, adotada inclusive pela Organização Mundial de Saúde (OMS), para calcular o chamado “peso ideal”. Obtido a partir do peso e da altura do indivíduo, o IMC também aponta níveis 
+            de magreza e obesidade, que são usados para nortear o trabalho de profissionais de saúde e de educadores físicos.</p>
+
+        </div>
+        <h2>Cálculo IMC</h2>
 
         <div class="calculo">
+            
             <form id="form">
                 <div class="form-control">
                     <label for="">Quantos KG você pesa?</label>
@@ -29,7 +48,11 @@
                     <label for="">Qual a sua altura?</label>
                 <input type="number" id="altura" placeholder="Altura (ex: 1,80)">
                 </div>
+
+              
                 <button onclick="calcular();return false">Calcular</button>
+              <a href="/">Realizar Novo Calculo</a>
+           
             </form>
         </div>
 
@@ -83,6 +106,12 @@
        </table>
         </div>
     </div>
+
+    <footer>
+
+        <p>Desenvolvido por Alan Silva</p>
+
+    </footer>
     
 </body>
 
